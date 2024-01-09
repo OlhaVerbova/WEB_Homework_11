@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hw"
+version = "0.1.0"
+description = ""
+authors = ["OlhaVerbova <137227019+OlhaVerbova@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = {extras = ["standart"], version = "^0.25.0"}
+fastapi = "^0.108.0"
+sqlalchemy = "^2.0.25"
+alembic = "^1.13.1"
+psycopg2 = "^2.9.9"
+pydantic = {extras = ["email"], version = "^2.5.3"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
